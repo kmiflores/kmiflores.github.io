@@ -1,0 +1,147 @@
+* {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 100;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, rgb(224, 108, 108), #111);
+}
+
+.accordion-header button{
+    font-size:17px;
+    font-weight: 700;
+}
+
+.accordion-header button i{
+    margin: 10px;
+    font-size: 20px;
+}
+
+#icono1 {
+    color: blue;
+}
+
+#icono2 {
+    color: green;
+}
+
+#icono3 {
+    color: red;
+}
+
+#perfil {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: stretch;
+}
+
+#nombre {
+    margin: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: -15px 10px 8px #000;
+}
+
+.navbar {
+    background: rgb(107, 50, 50);
+    box-shadow: 0px 0px 1px 1px #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.nav-item a {
+    padding: 10px;
+}
+
+.active {
+    color: #000;
+    background: #fff;
+}
+
+img {
+    border-radius: 30px 50px;
+    grid-column: 2;
+    grid-row: 1 / 2;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5%;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+
+#btn-mas {
+    display: none;
+}
+
+.boton {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.redes a, #btn{
+    display: block;
+    text-decoration: none;
+    background: #cc2b2b;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+    font-size: 20px;
+}
+
+.redes a:hover {
+    background: #fff;
+    color: #cc2b2b;
+
+}
+
+.redes a {
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~ .redes a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn {
+    cursor: pointer;
+    background: #f44141;
+    font-size: 25px;
+}
+
+#btn-mas:checked~ .btn-mas #btn{
+    transform: rotate(137deg);
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-subtitle {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.accordion-body {
+    font-size: large;
+}
